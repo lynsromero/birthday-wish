@@ -41,6 +41,12 @@
 
   setTimeout(showMainScreen, 3000);
 
+  // Preload gallery images now so they're cached when Yes is clicked
+  for (var p = 0; p < PHOTOS.length; p++) {
+    var img = new Image();
+    img.src = PHOTOS[p];
+  }
+
   // ============================================================
   // NO BUTTON — Dodge logic
   // ============================================================
@@ -125,11 +131,6 @@
     el.classList.remove('notrans');
   }
 
-  function preloadImage(src) {
-    var img = new Image();
-    img.src = src;
-  }
-
   function transitionSlides() {
     var N = PHOTOS.length;
     var leftNext = nextPhotoIdx % N;
@@ -175,10 +176,6 @@
       clearInterval(slideshowTimer);
     }
     if (!PHOTOS || PHOTOS.length < 2) return;
-
-    for (var i = 0; i < PHOTOS.length; i++) {
-      preloadImage(PHOTOS[i]);
-    }
 
     var N = PHOTOS.length;
 
