@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lora:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="heart-3d-wrapper">
+      <div class="heart-shadow"></div>
+      <div class="heart-3d">
+        <svg class="heart-svg" viewBox="-120 -100 240 250" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff6b9d" />
+              <stop offset="40%" stop-color="#ff2d78" />
+              <stop offset="75%" stop-color="#c44dff" />
+              <stop offset="100%" stop-color="#7b2ff7" />
+            </linearGradient>
+            <linearGradient id="heartShade" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.3)" />
+              <stop offset="50%" stop-color="rgba(255,255,255,0)" />
+              <stop offset="100%" stop-color="rgba(0,0,0,0.25)" />
+            </linearGradient>
+            <radialGradient id="heartGlow" cx="40%" cy="30%" r="50%">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.35)" />
+              <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+            </radialGradient>
+            <filter id="heartSoft">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+            </filter>
+          </defs>
+          <g>
+            <path d="M0-25 C-40-85-100-50-100 10 C-100 65-45 100 0 140 C45 100 100 65 100 10 C100-50 40-85 0-25Z"
+                  fill="url(#heartGrad)" filter="url(#heartSoft)" />
+            <path d="M0-25 C-40-85-100-50-100 10 C-100 65-45 100 0 140 C45 100 100 65 100 10 C100-50 40-85 0-25Z"
+                  fill="url(#heartShade)" />
+            <path d="M0-25 C-40-85-100-50-100 10 C-100 65-45 100 0 140 C45 100 100 65 100 10 C100-50 40-85 0-25Z"
+                  fill="url(#heartGlow)" />
+            <ellipse cx="-32" cy="-25" rx="22" ry="28" fill="rgba(255,255,255,0.12)" transform="rotate(-18 -32 -25)" />
+            <ellipse cx="32" cy="-25" rx="22" ry="28" fill="rgba(255,255,255,0.12)" transform="rotate(18 32 -25)" />
+            <ellipse cx="-10" cy="20" rx="6" ry="10" fill="rgba(255,255,255,0.2)" transform="rotate(-12 -10 20)" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-screen" class="hidden">
+    <div class="content-wrapper">
+      <div class="quote-container" id="quote-container">
+        <div class="quote-decoration top">&#10022;</div>
+        <p class="quote">
+          Jhukī jhukī sī nazar meñ chhupā ikrār hai ki nahīñ,<br>
+          Dabā dabā sā jo dil meñ hai, vo pyaar hai ki nahīñ;<br>
+          Tumhāre shahr kā mausam kuchh aisā suhānā lagā,<br>
+          Ek shaam churā luuñ tumhāre saath &mdash; agar burā na lage;
+        </p>
+        <div class="quote-decoration bottom">&#10022;</div>
+      </div>
+      <div class="buttons">
+        <button id="btn-yes">Yes <span class="heart-icon">&#10084;</span></button>
+        <button id="btn-no">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="gallery" class="hidden">
+    <div class="gallery-backdrop"></div>
+    <div class="gallery-frame">
+      <div class="frame-ornament top-left"></div>
+      <div class="frame-ornament top-right"></div>
+      <div class="frame-ornament bottom-left"></div>
+      <div class="frame-ornament bottom-right"></div>
+      <h1 class="gallery-title">Happy Birthday Babe</h1>
+      <div class="slideshow">
+        <div class="slide left">
+          <img class="slide-img" src="" alt="Beautiful memory">
+          <img class="slide-img" src="" alt="Beautiful memory">
+        </div>
+        <div class="slide-divider"></div>
+        <div class="slide right">
+          <img class="slide-img" src="" alt="Beautiful memory">
+          <img class="slide-img" src="" alt="Beautiful memory">
+        </div>
+      </div>
+      <p class="gallery-subtitle">&#10084; Every moment with you is a treasure &#10084;</p>
+    </div>
+  </div>
+
+  <div id="petal-overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
