@@ -108,7 +108,7 @@ body {
   pointer-events: none;
   opacity: 0;
   transition: opacity 1s ease;
-  background: url('background/Rose-petals-falling-loop-animation.gif') center / cover no-repeat;
+  object-fit: cover;
   mix-blend-mode: screen;
 }
 
