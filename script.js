@@ -6,12 +6,12 @@
   // Example: 'images/photo-1.jpg', 'images/us-at-beach.jpg', etc.
   // ============================================================
   var PHOTOS = [
-    'images/Gemini_Generated_Image_4uxo834uxo834uxo.webp',
-    'images/Gemini_Generated_Image_5wfhbr5wfhbr5wfh.webp',
-    'images/Gemini_Generated_Image_5x06915x06915x06.webp',
-    'images/Gemini_Generated_Image_9s7qfy9s7qfy9s7q.webp',
-    'images/Gemini_Generated_Image_dxjf91dxjf91dxjf.webp',
-    'images/Gemini_Generated_Image_iibifhiibifhiibi.webp',
+    'images/photo-1.webp',
+    'images/photo-2.webp',
+    'images/photo-3.webp',
+    'images/photo-4.webp',
+    'images/photo-5.webp',
+    'images/photo-6.webp',
   ];
 
   // ============================================================
